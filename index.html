@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
+
+    <!-- <link href="https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap" rel="stylesheet"> -->
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script&family=Lobster&display=swap" rel="stylesheet">
+    <title>Document</title>
+</head>
+<body>
+    
+ <section>
+     <img src="./images/stars.png" id='stars' alt="">
+     <img src="./images/stars2.png" id='stars2' alt="">
+     <img src="./images/moon.png" id='moon' alt="">
+     <p id='text'>Eid Mubarak</p>
+     <img src="./images/rock.png" id='rock' alt="">
+     <img src="./images/masjid.png" id='masjid' alt="">
+     <img src="./images/bottom.png" alt="">
+     <img src="./images/lamp.png" id='lamp' alt="">
+ </section>
+
+ <div class="sec">
+     <h2>Happy Eid Mubarak To You And Your Family</h2>
+     <br>
+     <p>A DAY TO REFLECT AND PONDER. IT’S-A DAY TO CELEBRATE TOGETHER <br> <br>
+        MAY ALLAH BRINGS YOU LOTS OF JOY AND HAPPINESS! I WISH YOU VERY HAPPY EID-UL-FITR. REMEMBER ME IN YOUR PRAYER. <br><br>
+        I wish you the gift of faith, the blessing of hope and the peace of HIS love at Eid and always. <br><br>
+        May the guidance & blessings of ALLAH be with you & your family. EID MUBARAK!
+    </p>
+    <br>
+    <h3>-Ashraful Islam</h3>
+ </div>
+
+ <script>
+     let stars = document.getElementById("stars");
+     let stars2 = document.getElementById("stars2");
+     let moon = document.getElementById("moon");
+     let rock = document.getElementById("rock");
+     let masjid = document.getElementById("masjid");
+     let bottom = document.getElementById("bottom");
+     let lamp = document.getElementById("lamp");
+     let text = document.getElementById("text");
+
+     window.addEventListener("scroll", function(){
+         let value = window.scrollY;
+         stars.style.bottom = value * 0.05 + '%';
+         moon.style.bottom = value * -0.5 + 'px';
+         rock.style.bottom = value * -0.75 + 'px';
+         masjid.style.bottom = value * -0.15 + 'px';
+         text.style.right = -60 + value * 0.5 + '%';
+         text.style.top = 50 + value * 0.1 + '%';
+     })
+ </script>
+
+
+</body>
+</html>
