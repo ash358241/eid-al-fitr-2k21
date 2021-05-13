@@ -7,8 +7,6 @@
 body{
     background: linear-gradient(#8b016a, #6f1159);
     min-height: 100vh;
-    /* font-family: 'Dancing Script', cursive; */
-    /* overflow: hidden; */
     font-family: 'Dancing Script', cursive;
     font-family: 'Lobster', cursive;
 }
